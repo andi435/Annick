@@ -158,66 +158,50 @@
 			</div>
 		</article>
 
-		<!-- Footer with Added Community Form Section -->
-		<footer id="footer">
-			<section>
-				<!-- Join the Community Form Section -->
-				<form method="post" action="#">
-					<div class="fields">
-						<div class="field">
-							<label for="community-name">Name</label>
-							<input type="text" name="community-name" id="community-name" placeholder="Your Name" />
-						</div>
-						<div class="field">
-							<label for="community-email">Email</label>
-							<input type="text" name="community-email" id="community-email" placeholder="Your Email" />
-						</div>
-						<div class="field">
-							<label for="community-message">Message</label>
-							<textarea name="community-message" id="community-message" rows="3" placeholder="Your Message"></textarea>
+		<!-- Update the form action to your secure endpoint -->
+							<form target="_blank" action="https://formsubmit.co/info@verdistudio.ca" method="POST">
+    <div class="form-group">
+      <div class="form-row">
+        <div class="col">
+          <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+        </div>
+        <div class="col">
+          <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+  </form>
 						</div>
 					</div>
-					<ul class="actions">
-						<li><input type="submit" value="Send Message" /></li>
-					</ul>
-				</form>
-			</section>
-			<section class="split contact">
-				<section class="alt">
-					<h3>Address</h3>
-					<p>Paris, France</p>
-				</section>
-				<section>
-					<h3>Phone</h3>
-					<p><a href="tel:+33786761127">+33 7 86 76 11 27</a></p>
-				</section>
-				<section>
-					<h3>Email</h3>
-					<p><a href="mailto:avmdeco@gmail.com">avmdeco@gmail.com</a></p>
-				</section>
-				<section>
-					<h3>Social</h3>
-					<ul class="icons alt">
-						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-					</ul>
-				</section>
-			</section>
-			<ul id="copyright">
-				<li>&copy; Annick Vavasseur. All rights reserved.</li>
-				<li>Design inspired by <a href="http://html5up.net">HTML5 UP</a></li>
-			</ul>
-		</footer>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Connect</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-behance"><span class="label">Behance</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Verdi Studio. All rights reserved</li><li>Innovation Through Design</li>
+							</ul>
+						</div>
+					</footer>
+			</div>
 
 		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 	</body>
 </html>
