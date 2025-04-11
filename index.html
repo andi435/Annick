@@ -11,7 +11,7 @@
 		<!-- Apple Touch Icon (optional) -->
 		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!-- Added inline styles for mobile-only paragraph -->
+		<!-- Added inline styles for mobile-only paragraph and centered image -->
 		<style>
 			.bottom-three {
 				display: none; /* Hidden by default */
@@ -23,6 +23,31 @@
 					display: block; /* Show on mobile */
 					margin-bottom: 3em; /* Adding some spacing */
 				}
+			}
+			
+			/* Center the profile image and prevent oval styling */
+			.profile-image-container {
+				display: flex;
+				justify-content: center;
+				margin: 0 auto;
+				width: 100%;
+			}
+			
+			.profile-image {
+				max-width: 100%;
+				height: auto;
+				border-radius: 0 !important; /* Prevent rounded corners */
+				object-fit: contain;
+			}
+			
+			/* Override any potential image styling from the theme */
+			.image.fit img.profile-image {
+				border-radius: 0 !important;
+				overflow: visible !important;
+				-webkit-mask-image: none !important;
+				mask-image: none !important;
+				shape-outside: none !important;
+				clip-path: none !important;
 			}
 		</style>
 	</head>
@@ -41,19 +66,22 @@
 		<!-- Home -->
 		<article id="top" class="wrapper style3">
 			<div class="container">
-				<div class="row gtr-150">
-					<div class="col-4 col-5-large col-12-medium">
-						<!-- Updated image with descriptive alt text -->
-						<span class="image fit">
-							<img src="images/Avavasseur.jpg" alt="Annick Vavasseur" />
-						</span>
+				<!-- Modified layout to center the image -->
+				<div class="row aln-center">
+					<!-- Centered profile image -->
+					<div class="col-8 col-10-medium col-12-small">
+						<div class="profile-image-container">
+							<img src="images/Avavasseur.jpg" alt="Annick Vavasseur" class="profile-image" />
+						</div>
 					</div>
-					<p class="bottom-three">
-						<!-- This paragraph will only appear on mobile devices -->
-					</p>
+				</div>
+				
+				<p class="bottom-three">
+					<!-- This paragraph will only appear on mobile devices -->
+				</p>
 
-					<div class="row">
-					<div class="col-8 col-7-large col-12-medium">
+				<div class="row aln-center">
+					<div class="col-10 col-12-medium">
 						<header>
 							<h1>Bonjour, I'm <strong>Annick Vavasseur</strong>.</h1>
 						</header>
@@ -237,7 +265,6 @@
 					<div class="col-12">
 						<ul id="copyright" class="text-center">
 							<li>&copy; Annick Vavasseur. All rights reserved.</li>
-							<li>Design inspired by <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
 					</div>
 				</div>
