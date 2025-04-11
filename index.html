@@ -11,6 +11,20 @@
 		<!-- Apple Touch Icon (optional) -->
 		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- Added inline styles for mobile-only paragraph -->
+		<style>
+			.bottom-three {
+				display: none; /* Hidden by default */
+			}
+			
+			/* Show only on mobile devices */
+			@media screen and (max-width: 736px) {
+				.bottom-three {
+					display: block; /* Show on mobile */
+					margin-bottom: 3em; /* Adding some spacing */
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -35,6 +49,8 @@
 						</span>
 					</div>
 					<p class="bottom-three">
+						<!-- This paragraph will only appear on mobile devices -->
+					</p>
 
 					<div class="row">
 					<div class="col-8 col-7-large col-12-medium">
