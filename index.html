@@ -49,6 +49,13 @@
 				shape-outside: none !important;
 				clip-path: none !important;
 			}
+			
+			/* Added clearfix style to prevent overlapping */
+			.clearfix {
+				clear: both;
+				display: table;
+				content: "";
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -74,6 +81,7 @@
 						<span class="image fit">
 							<img src="images/Avavasseur.jpg" alt="Annick Vavasseur" class="profile-image">
 						</span>
+						<div class="clearfix"></div> <!-- Added clearfix to prevent overlap -->
 					</div>
 				</div>	
 				<p class="bottom-three">
@@ -110,6 +118,7 @@
 						<span class="image fit">
 							<img src="images/paris_painting.jpg" alt="Featured artwork by Annick Vavasseur showcasing artistic style and technique">
 						</span>
+						<div class="clearfix"></div> <!-- Added clearfix here too for consistency -->
 					</div>
 				</div>
 				
