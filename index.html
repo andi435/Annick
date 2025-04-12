@@ -50,11 +50,9 @@
 				clip-path: none !important;
 			}
 			
-			/* Added clearfix style to prevent overlapping */
-			.clearfix {
-				clear: both;
-				display: table;
-				content: "";
+			/* Added margin for spacing after image */
+			.image-container {
+				margin-bottom: 2em;
 			}
 		</style>
 	</head>
@@ -73,21 +71,16 @@
 		<!-- Home -->
 		<article id="top" class="wrapper style3">
 			<div class="container">
-				<!-- Modified layout to center the image -->
-				<div class="row aln-center">
-					<!-- Centered profile image -->
-					<div class="row aln-center">
+				<!-- Fixed structure for the image and text section -->
+				<div class="row aln-center image-container">
 					<div class="col-8 col-12-medium">
 						<span class="image fit">
 							<img src="images/Avavasseur.jpg" alt="Annick Vavasseur" class="profile-image">
 						</span>
-						<div class="clearfix"></div> <!-- Added clearfix to prevent overlap -->
 					</div>
-				</div>	
-				<p class="bottom-three">
-					<!-- This paragraph will only appear on mobile devices -->
-				</p>
+				</div>
 				
+				<!-- Separate row for text content, properly distanced from image -->
 				<div class="row aln-center">
 					<div class="col-10 col-12-medium">
 						<header>
@@ -113,12 +106,11 @@
 				</header>
 				
 				<!-- New Centered Image -->
-				<div class="row aln-center">
+				<div class="row aln-center image-container">
 					<div class="col-8 col-12-medium">
 						<span class="image fit">
 							<img src="images/paris_painting.jpg" alt="Featured artwork by Annick Vavasseur showcasing artistic style and technique">
 						</span>
-						<div class="clearfix"></div> <!-- Added clearfix here too for consistency -->
 					</div>
 				</div>
 				
