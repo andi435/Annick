@@ -62,31 +62,36 @@
 				margin-top: 1em;
 			}
 
-			/* Add some spacing between technique sections */
-			.technique-box {
-				margin-bottom: 2em;
-				display: flex;
-				flex-direction: column;
-				height: 100%; /* Make all boxes the same height */
-			}
-
-			/* Make technique titles stand out */
-			.technique-title {
-				margin-top: 1em;
-				font-weight: bold;
-			}
-			
-			/* Make all technique boxes the same height */
+			/* Force equal height for technique boxes */
 			.technique-container {
 				display: flex;
 				flex-wrap: wrap;
 			}
 			
-			/* Fix height for all description paragraphs */
-			.technique-description {
-				height: 200px; /* Fixed height for all descriptions */
-				overflow: hidden; /* Hide overflow without scrollbar */
-				margin-bottom: 0; /* Remove bottom margin */
+			/* Make each column the same height */
+			.technique-column {
+				display: flex;
+			}
+			
+			/* Make boxes expand to fill available height */
+			.technique-box {
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+				width: 100%;
+			}
+			
+			/* Push description to top, title stays fixed */
+			.technique-content {
+				flex: 1;
+				display: flex;
+				flex-direction: column;
+			}
+			
+			/* Make technique titles stand out */
+			.technique-title {
+				margin-top: 1em;
+				font-weight: bold;
 			}
 		</style>
 	</head>
@@ -112,31 +117,37 @@
 				</header>
 				
 				<div class="row technique-container">
-					<div class="col-4 col-6-medium col-12-small">
+					<div class="col-4 col-6-medium col-12-small technique-column">
 						<article class="box style2 technique-box">
 							<span class="image featured">
 								<img src="images/oil-painting.png" alt="Oil painting technique by Annick Vavasseur showing rich textures and depth" />
 							</span>
-							<h3 class="technique-title">Oil Painting</h3>
-							<p class="technique-description">My oil painting technique employs layers of pigment suspended in oil to create rich, luminous works with extraordinary depth. I often build up multiple layers, allowing each to partially dry before adding the next, creating a sense of history within each piece. The slow drying time of oils allows me to work with the paint over several days, perfecting subtle color transitions and textures.</p>
+							<div class="technique-content">
+								<h3 class="technique-title">Oil Painting</h3>
+								<p class="technique-description">My oil painting technique employs layers of pigment suspended in oil to create rich, luminous works with extraordinary depth. I often build up multiple layers, allowing each to partially dry before adding the next, creating a sense of history within each piece. The slow drying time of oils allows me to work with the paint over several days, perfecting subtle color transitions and textures.</p>
+							</div>
 						</article>
 					</div>
-					<div class="col-4 col-6-medium col-12-small">
+					<div class="col-4 col-6-medium col-12-small technique-column">
 						<article class="box style2 technique-box">
 							<span class="image featured">
 								<img src="images/impressionism.png" alt="Impressionist style painting by Annick Vavasseur showing vibrant colors and loose brushwork" />
 							</span>
-							<h3 class="technique-title">Impressionism</h3>
-							<p class="technique-description">My impressionist works capture fleeting moments through visible brushstrokes and emphasis on light and movement. Rather than blend colors completely, I place distinct dabs of color side by side, allowing the viewer's eye to blend them optically from a distance. This technique creates a vibrant, shimmering quality that evokes the transient nature of light and atmosphere in Parisian scenes.</p>
+							<div class="technique-content">
+								<h3 class="technique-title">Impressionism</h3>
+								<p class="technique-description">My impressionist works capture fleeting moments through visible brushstrokes and emphasis on light and movement. Rather than blend colors completely, I place distinct dabs of color side by side, allowing the viewer's eye to blend them optically from a distance. This technique creates a vibrant, shimmering quality that evokes the transient nature of light and atmosphere in Parisian scenes.</p>
+							</div>
 						</article>
 					</div>
-					<div class="col-4 col-6-medium col-12-small">
+					<div class="col-4 col-6-medium col-12-small technique-column">
 						<article class="box style2 technique-box">
 							<span class="image featured">
 								<img src="images/trompe-loeil.png" alt="Trompe l'oeil technique by Annick Vavasseur demonstrating realistic optical illusion" />
 							</span>
-							<h3 class="technique-title">Trompe l'Œil</h3>
-							<p class="technique-description">Trompe l'œil, meaning "deceive the eye," is my most technical approach. These hyperrealistic paintings create optical illusions that make two-dimensional surfaces appear three-dimensional. I use precise detail, perfect perspective, and careful manipulation of light and shadow to create works that seem to extend beyond the canvas. This technique requires extraordinary patience and precision to achieve its distinctive illusion of reality.</p>
+							<div class="technique-content">
+								<h3 class="technique-title">Trompe l'Œil</h3>
+								<p class="technique-description">Trompe l'œil, meaning "deceive the eye," is my most technical approach. These hyperrealistic paintings create optical illusions that make two-dimensional surfaces appear three-dimensional. I use precise detail, perfect perspective, and careful manipulation of light and shadow to create works that seem to extend beyond the canvas. This technique requires extraordinary patience and precision to achieve its distinctive illusion of reality.</p>
+							</div>
 						</article>
 					</div>
 				</div>
