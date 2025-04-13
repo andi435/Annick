@@ -85,20 +85,8 @@
 			/* Fix height for all description paragraphs */
 			.technique-description {
 				height: 200px; /* Fixed height for all descriptions */
-				overflow: auto; /* Add scrollbar if content exceeds height */
+				overflow: hidden; /* Hide overflow without scrollbar */
 				margin-bottom: 0; /* Remove bottom margin */
-			}
-			
-			/* Equal height for all featured images */
-			.image.featured {
-				height: 250px; /* Set fixed height for images */
-				overflow: hidden; /* Hide overflow */
-			}
-			
-			.image.featured img {
-				width: 100%;
-				height: 100%;
-				object-fit: cover; /* Ensure images cover the area nicely */
 			}
 		</style>
 	</head>
