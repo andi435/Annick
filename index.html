@@ -54,6 +54,13 @@
 			.image-container {
 				margin-bottom: 7em;
 			}
+			
+			/* Center the button */
+			.button-container {
+				text-align: center;
+				width: 100%;
+				margin-top: 1em;
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -71,11 +78,11 @@
 		<!-- Home -->
 		<article id="top" class="wrapper style3">
 			<div class="container">
-				<!-- Fixed structure for the image and text section -->
+				<!-- Enhanced centering for the image -->
 				<div class="row aln-center image-container">
-					<div class="col-8 col-12-medium">
-						<span class="image fit">
-							<img src="images/Avavasseur.jpg" alt="Annick Vavasseur" class="profile-image">
+					<div class="col-8 col-12-medium" style="display: flex; justify-content: center;">
+						<span class="image fit" style="text-align: center;">
+							<img src="images/Avavasseur.jpg" alt="Annick Vavasseur" class="profile-image" style="margin: 0 auto;">
 						</span>
 					</div>
 				</div>
@@ -89,7 +96,10 @@
 						<p>
 							I am a passionate painter based in Paris, transforming everyday scenes into vibrant, soulful art. My work celebrates the beauty and charm of the City of Light through expressive brush strokes and imaginative compositions.
 						</p>
-						<a href="#about" class="button large scrolly">Discover More About My Art</a>
+						<!-- Added button container for centering -->
+						<div class="button-container">
+							<a href="#about" class="button large scrolly">Discover More About My Art</a>
+						</div>
 					</div>
 				</div>
 			</div>
