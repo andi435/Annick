@@ -1,0 +1,325 @@
+<!DOCTYPE HTML>
+<html lang="eng">
+	<head>
+		<title>Annick Vavasseur – Gallery</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Explore the art gallery of Annick Vavasseur featuring oil paintings, impressionist works, and trompe l'oeil masterpieces that showcase her distinctive artistic style." />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!-- Favicon -->
+		<link rel="icon" href="images/favicon.png" type="image">
+		<link rel="shortcut icon" href="images/favicon.png" type="image">
+		<!-- Apple Touch Icon (optional) -->
+		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- Added inline styles for mobile-only paragraph and centered image -->
+		<style>
+			.bottom-three {
+				display: none; /* Hidden by default */
+			}
+			
+			/* Show only on mobile devices */
+			@media screen and (max-width: 736px) {
+				.bottom-three {
+					display: block; /* Show on mobile */
+					margin-bottom: 3em; /* Adding some spacing */
+				}
+			}
+			
+			/* Center the profile image and prevent oval styling */
+			.profile-image-container {
+				display: flex;
+				justify-content: center;
+				margin: 0 auto;
+				width: 100%;
+			}
+			
+			.profile-image {
+				max-width: 100%;
+				height: auto;
+				border-radius: 0 !important; /* Prevent rounded corners */
+				object-fit: contain;
+			}
+			
+			/* Override any potential image styling from the theme */
+			.image.fit img.profile-image {
+				border-radius: 0 !important;
+				overflow: visible !important;
+				-webkit-mask-image: none !important;
+				mask-image: none !important;
+				shape-outside: none !important;
+				clip-path: none !important;
+			}
+			
+			/* Added margin for spacing after image */
+			.image-container {
+				margin-bottom: 3em;
+			}
+			
+			/* Center the button */
+			.button-container {
+				text-align: center;
+				width: 100%;
+				margin-top: 1em;
+			}
+
+			/* Gallery styles */
+			.gallery-container {
+				display: flex;
+				flex-wrap: wrap;
+			}
+			
+			.gallery-item {
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+				margin-bottom: 2em;
+			}
+			
+			.gallery-image {
+				position: relative;
+				overflow: hidden;
+				border-radius: 6px;
+			}
+			
+			.gallery-image img {
+				width: 100%;
+				height: auto;
+				transition: transform 0.3s ease;
+			}
+			
+			.gallery-image:hover img {
+				transform: scale(1.05);
+			}
+			
+			.gallery-title {
+				margin-top: 1em;
+				font-weight: bold;
+				text-align: center;
+			}
+			
+			.gallery-description {
+				text-align: center;
+				margin-top: 0.5em;
+				font-style: italic;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Navigation -->
+		<nav id="nav">
+			<ul class="container">
+				<li><a href="index.html#top">Home</a></li>
+				<li><a href="index.html#about">About</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="index.html#contact">Contact</a></li>
+				<li><a href="techniques.html">Techniques</a></li>
+			</ul>
+		</nav>
+
+		<!-- Gallery -->
+		<article id="gallery" class="wrapper style2">
+			<div class="container">
+				<header>
+					<h1>Art Gallery</h1>
+					<p>Explore a collection of my finest works showcasing various techniques, subjects, and artistic expressions.</p>
+				</header>
+				
+				<div class="row gallery-container">
+					<div class="col-4 col-6-medium col-12-small">
+						<article class="gallery-item">
+							<div class="gallery-image">
+								<img src="images/gallery/paris-sunset.jpg" alt="Paris Sunset - Impressionist painting of Parisian rooftops at dusk" />
+							</div>
+							<h3 class="gallery-title">Paris Sunset</h3>
+							<p class="gallery-description">Impressionist, 2023</p>
+						</article>
+					</div>
+					<div class="col-4 col-6-medium col-12-small">
+						<article class="gallery-item">
+							<div class="gallery-image">
+								<img src="images/gallery/garden-blooms.jpg" alt="Garden Blooms - Vibrant oil painting of spring flowers" />
+							</div>
+							<h3 class="gallery-title">Garden Blooms</h3>
+							<p class="gallery-description">Oil on Canvas, 2022</p>
+						</article>
+					</div>
+					<div class="col-4 col-6-medium col-12-small">
+						<article class="gallery-item">
+							<div class="gallery-image">
+								<img src="images/gallery/window-view.jpg" alt="Window View - Trompe l'oeil painting creating illusion of a window" />
+							</div>
+							<h3 class="gallery-title">Window View</h3>
+							<p class="gallery-description">Trompe l'Œil, 2024</p>
+						</article>
+					</div>
+					<div class="col-4 col-6-medium col-12-small">
+						<article class="gallery-item">
+							<div class="gallery-image">
+								<img src="images/gallery/seine-morning.jpg" alt="Seine Morning - Impressionist scene of river Seine in morning light" />
+							</div>
+							<h3 class="gallery-title">Seine Morning</h3>
+							<p class="gallery-description">Impressionist, 2021</p>
+						</article>
+					</div>
+					<div class="col-4 col-6-medium col-12-small">
+						<article class="gallery-item">
+							<div class="gallery-image">
+								<img src="images/gallery/still-life-fruits.jpg" alt="Still Life with Fruits - Detailed oil painting of fruit arrangement" />
+							</div>
+							<h3 class="gallery-title">Still Life with Fruits</h3>
+							<p class="gallery-description">Oil on Canvas, 2023</p>
+						</article>
+					</div>
+					<div class="col-4 col-6-medium col-12-small">
+						<article class="gallery-item">
+							<div class="gallery-image">
+								<img src="images/gallery/bookshelf-illusion.jpg" alt="Bookshelf Illusion - Trompe l'oeil painting of an antique bookshelf" />
+							</div>
+							<h3 class="gallery-title">Bookshelf Illusion</h3>
+							<p class="gallery-description">Trompe l'Œil, 2022</p>
+						</article>
+					</div>
+					<div class="col-4 col-6-medium col-12-small">
+						<article class="gallery-item">
+							<div class="gallery-image">
+								<img src="images/gallery/montmartre-cafe.jpg" alt="Montmartre Café - Impressionist scene of Parisian café life" />
+							</div>
+							<h3 class="gallery-title">Montmartre Café</h3>
+							<p class="gallery-description">Impressionist, 2024</p>
+						</article>
+					</div>
+					<div class="col-4 col-6-medium col-12-small">
+						<article class="gallery-item">
+							<div class="gallery-image">
+								<img src="images/gallery/coastal-landscape.jpg" alt="Coastal Landscape - Oil painting of French coastal scene" />
+							</div>
+							<h3 class="gallery-title">Coastal Landscape</h3>
+							<p class="gallery-description">Oil on Canvas, 2021</p>
+						</article>
+					</div>
+					<div class="col-4 col-6-medium col-12-small">
+						<article class="gallery-item">
+							<div class="gallery-image">
+								<img src="images/gallery/doorway-beyond.jpg" alt="Doorway Beyond - Trompe l'oeil painting creating illusion of an open door" />
+							</div>
+							<h3 class="gallery-title">Doorway Beyond</h3>
+							<p class="gallery-description">Trompe l'Œil, 2023</p>
+						</article>
+					</div>
+				</div>
+				
+				<div class="row aln-center">
+					<div class="col-10 col-12-medium">
+						<section>
+							<h2>About My Artwork</h2>
+							<p>My work spans various techniques, from impressionist scenes of Paris to detailed trompe l'œil illusions and rich oil paintings. Each piece reflects my passion for capturing light, texture, and emotion through traditional methods refined over years of practice.</p>
+							<p>All pieces displayed in this gallery are available for purchase or commission. For inquiries about pricing, availability, or commissioning a similar piece, please contact me using the form below.</p>
+						</section>
+						<!-- Added button container for centering -->
+						<div class="button-container">
+							<a href="index.html#contact" class="button large">Contact for Purchase</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<!-- Contact Form Section added from index.html -->
+		<article id="contact" class="wrapper style4">
+			<div class="container medium">
+				<header>
+					<h2>Contact Annick Vavasseur</h2>
+					<p>Let's connect and bring your vision to life on canvas.</p>
+				</header>
+				<div class="row">
+					<div class="col-12">
+						<form target="_blank" action="https://formsubmit.co/info@verdistudio.ca" method="POST">
+							<div class="row">
+								<div class="col-6 col-12-small">
+									<input type="text" name="name" id="name" placeholder="Your Name" required />
+								</div>
+								<div class="col-6 col-12-small">
+									<input type="email" name="email" id="email" placeholder="Your Email" required />
+								</div>
+								<div class="col-12">
+									<input type="text" name="subject" id="subject" placeholder="Subject" />
+								</div>
+								<div class="col-12">
+									<textarea name="message" id="message" placeholder="Your Message" rows="10" required></textarea>
+								</div>
+								<div class="col-12">
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" /></li>
+										<li><input type="reset" value="Clear Form" class="alt" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<!-- Footer with Revised Layout -->
+		<footer id="footer">
+			<div class="container">
+				<div class="row">
+					<!-- Contact Information Side by Side -->
+					<div class="col-9 col-12-medium">
+						<div class="row">
+							<div class="col-4 col-12-small">
+								<section class="contact-item">
+									<h3>Address</h3>
+									<p>Paris, France</p>
+								</section>
+							</div>
+							<div class="col-4 col-12-small">
+								<section class="contact-item">
+									<h3>Phone</h3>
+									<p><a href="tel:+33786761127">+33 7 86 76 11 27</a></p>
+								</section>
+							</div>
+							<div class="col-4 col-12-small">
+								<section class="contact-item">
+									<h3>Email</h3>
+									<p><a href="mailto:avmdeco@gmail.com">avmdeco@gmail.com</a></p>
+								</section>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Social Icons Vertical -->
+					<div class="col-3 col-12-medium">
+						<section class="social-vertical">
+							<h3>Social</h3>
+							<ul class="icons alt stacked">
+								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+							</ul>
+						</section>
+					</div>
+				</div>
+				
+				<!-- Copyright Section at Bottom -->
+				<div class="row">
+					<div class="col-12">
+						<ul id="copyright" class="text-center">
+							<li>&copy; Annick Vavasseur. All rights reserved.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
